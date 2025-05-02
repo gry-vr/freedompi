@@ -1,0 +1,14 @@
+[Unit]
+Description=Custom Startup Script
+After=network.target
+Requires=network.target
+
+[Service]
+ExecStart=/home/droyd/pignstartup.sh
+Restart=on-failure
+RestartSec=10
+TimeoutStartSec=5min
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,3 @@
+[submodule "CanLink"]
+	path = CanLink
+	url = https://github.com/gry-vr/CanLink.git
